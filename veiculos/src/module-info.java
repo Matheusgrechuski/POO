@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Veiculo {
+module veiculos {
 }
