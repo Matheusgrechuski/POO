@@ -1,0 +1,58 @@
+package veiculos;
+
+public class principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 // Criando um carro usando uma classe anônima
+        veiculo carro = new veiculo() {
+            @Override
+            public void mover() {
+                System.out.println("O carro está se movendo rapidamente na estrada.");
+            }
+        };
+
+        // Criando uma bicicleta usando uma classe anônima
+        veiculo bicicleta = new veiculo() {
+            @Override
+            public void mover() {
+                System.out.println("A bicicleta está sendo pedalada no parque.");
+            }
+        };
+
+        // Criando um caminhão usando uma classe anônima
+        veiculo caminhão = new veiculo() {
+            @Override
+            public void mover() {
+                System.out.println("O caminhão está transportando carga pesada.");
+            }
+        };
+
+        // Chamando o método mover para cada veículo
+        carro.mover();
+        bicicleta.mover();
+        caminhão.mover();
+
+        // Adicionando mais veículos usando classes anônimas
+        veiculo moto = new veiculo() {
+            @Override
+            public void mover() {
+                System.out.println("A moto está acelerando pela cidade.");
+            }
+        };
+
+        veiculo onibus = new veiculo() {
+            @Override
+            public void mover() {
+                System.out.println("O ônibus está transportando passageiros.");
+            }
+        };
+
+        // Chamando o método mover para os novos veículos
+        moto.mover();
+        onibus.mover();
+    
+
+	}
+
+}
